@@ -1,0 +1,3 @@
+[submodule "iaac-template"]
+	path = iaac-template
+	url = https://github.com/IaaC/iaac-thesis-typst-template.git
