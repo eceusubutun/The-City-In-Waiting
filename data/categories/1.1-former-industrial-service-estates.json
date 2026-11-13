@@ -1,0 +1,405 @@
+{
+  "category": {
+    "id": "1.1",
+    "branch": "1. Previously developed land",
+    "name": "Former industrial & service estates",
+    "definition": "Whole sites or estates of former non-residential use: land plus any structures, machinery and residues on it.",
+    "test": "The unit of vacancy is a whole estate or complex (its own plot, or several buildings), not part of a network and not a single building.",
+    "subtype_rule": "Classify by the dominant function at the moment of vacancy; record other functions in secondary_types and earlier uses in use_history."
+  },
+  "sub_types": [
+    {
+      "id": "1.1.a",
+      "name": "Former industrial sites",
+      "includes": "factories, works, workshops, breweries, slaughterhouses, shipyards",
+      "excludes": "single factory within active urban fabric → 1.3.d",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    },
+    {
+      "id": "1.1.b",
+      "name": "Former logistics & storage sites",
+      "includes": "warehouses, storage yards, distribution centres",
+      "excludes": "on a quay or rail siding → 1.2",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    },
+    {
+      "id": "1.1.c",
+      "name": "Former energy & utility plants",
+      "includes": "power stations, gasworks, water and sewage works, waste-treatment plants",
+      "excludes": "linear utility networks → 1.2",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    },
+    {
+      "id": "1.1.d",
+      "name": "Former extraction & disposal sites",
+      "includes": "quarries, mines, spoil heaps, landfills, tips",
+      "excludes": "construction excavation → 1.4.d",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    },
+    {
+      "id": "1.1.e",
+      "name": "Former military sites",
+      "includes": "barracks, bases, training grounds, ranges, depots",
+      "excludes": "military airfields and naval docks → 1.2",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    },
+    {
+      "id": "1.1.f",
+      "name": "Former institutional estates",
+      "includes": "hospital complexes, campuses, prisons",
+      "excludes": "single public building → 1.3.c",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    },
+    {
+      "id": "1.1.g",
+      "name": "Former commercial & leisure complexes",
+      "includes": "shopping centres, retail parks, amusement parks, exhibition grounds",
+      "excludes": "single commercial building → 1.3.b",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    },
+    {
+      "id": "1.1.h",
+      "name": "Former agricultural estates",
+      "includes": "farm complexes, barns and yards, greenhouse and nursery sites",
+      "excludes": "abandoned fields → 2.2",
+      "aerial_signature": [],
+      "images": [],
+      "typical_objects": [],
+      "ground_constraints": []
+    }
+  ],
+  "cases": [],
+  "case_template": {
+    "case": {
+      "id": "",
+      "name": "",
+      "city": "",
+      "country": "",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "sub_type": "",
+      "secondary_types": [],
+      "use_history": [],
+      "year_built": null,
+      "form_tag": "",
+      "sources": [
+        {
+          "id": "S1",
+          "title": "",
+          "author_or_publisher": "",
+          "date": "",
+          "type": "",
+          "url": ""
+        }
+      ]
+    },
+    "site": {
+      "area_m2": null,
+      "cadastral_ref": "",
+      "parcel_shape": "",
+      "shape_index": null,
+      "slope": "",
+      "mean_slope_deg": null,
+      "geology": {
+        "soil_type": "",
+        "permeability": ""
+      },
+      "water_proximity_m": null,
+      "flood_risk": "",
+      "flood_return_period": "",
+      "location": "",
+      "urban_network": "",
+      "connectivity": {
+        "nearest_bus_stop_m": null,
+        "nearest_rail_metro_m": null,
+        "nearest_main_road_m": null,
+        "distance_to_centre_km": null,
+        "nearest_local_services_m": null
+      },
+      "nearby_protected_areas": {
+        "names": [],
+        "nearest_distance_m": null
+      }
+    },
+    "before": {
+      "years_vacant": null,
+      "cause_of_vacancy": "",
+      "secondary_causes": [],
+      "status": "",
+      "contamination": "",
+      "previous_use_risk": "",
+      "site_layout": "",
+      "enclosure": "",
+      "vegetation": {
+        "present": null,
+        "tree_count_per_ha": null,
+        "tree_canopy_cover_pct": null,
+        "plantable_space_pct": null,
+        "tree_species_count": null,
+        "ndvi_mean": null,
+        "vegetation_height_m": null
+      },
+      "succession_stage": "",
+      "land_cover_pct": {
+        "trees_shrubs": null,
+        "grass_herbaceous": null,
+        "bare_earth": null,
+        "water": null,
+        "impervious_surface": null,
+        "buildings": null
+      },
+      "surface_substrate": [],
+      "infrastructure": "",
+      "maintenance": "",
+      "terrain_vague": "",
+      "human_traces": [],
+      "heritage_value": "",
+      "access": "",
+      "ownership": {
+        "type": "",
+        "fragmented": null,
+        "owner_behaviour": ""
+      },
+      "reuse_cost": {
+        "amount": null,
+        "currency": "",
+        "year": null,
+        "source": ""
+      },
+      "response_to_vacancy": [],
+      "zoning": "",
+      "planning_status": "",
+      "surrounding_context": "",
+      "neighbour_sensitivity": "",
+      "nearby_green_spaces": {
+        "names": [],
+        "nearest_distance_m": null,
+        "green_share_pct": null,
+        "buffer_m": null
+      },
+      "surrounding_built_up_pct": null,
+      "nearest_other_vacant_site_m": null,
+      "surroundings": {
+        "year": null,
+        "buffer_m": null,
+        "spatial_unit": "",
+        "comparison_area": "",
+        "property_value_level": "",
+        "income_level": "",
+        "safety": "",
+        "indicators": [
+          {
+            "name": "",
+            "value": null,
+            "comparison_value": null,
+            "source": ""
+          }
+        ]
+      }
+    },
+    "temporary": {
+      "type": "",
+      "type_category": "",
+      "start_date": "",
+      "end_date": "",
+      "duration_months": null,
+      "area_pct": null,
+      "legal_framework": "",
+      "agreement_type": "",
+      "users_count": null,
+      "visitors_per_year": null,
+      "user_rent": "",
+      "funding": "",
+      "reversibility": "",
+      "link_to_permanent_plan": "",
+      "outcome": "",
+      "actors": [
+        {
+          "name": "",
+          "sector": "",
+          "role": "",
+          "initiator": null
+        }
+      ]
+    },
+    "after": {
+      "assessment": {
+        "date": "",
+        "years_after_completion": null,
+        "phase": ""
+      },
+      "completion_year": null,
+      "new_use": [],
+      "end_use_sensitivity": "",
+      "physical_end_state": "",
+      "retained_fabric": {
+        "building_shell_reused_pct": null,
+        "volume_conserved_m3": null
+      },
+      "site_layout": "",
+      "enclosure": "",
+      "land_cover_pct": {
+        "trees_shrubs": null,
+        "grass_herbaceous": null,
+        "bare_earth": null,
+        "water": null,
+        "impervious_surface": null,
+        "buildings": null
+      },
+      "vegetation": {
+        "present": null,
+        "tree_count_per_ha": null,
+        "tree_canopy_cover_pct": null,
+        "plantable_space_pct": null,
+        "tree_species_count": null,
+        "ndvi_mean": null,
+        "vegetation_height_m": null
+      },
+      "surface_substrate": [],
+      "infrastructure": "",
+      "reclaimed_area_m2": null,
+      "biodiversity": "",
+      "memory_protection": {
+        "memory_tangible": "",
+        "memory_intangible": ""
+      },
+      "public_access": "",
+      "inclusion": "",
+      "gentrification": "",
+      "governance_type": [],
+      "governance": "",
+      "urban_role": "",
+      "economic_viability": "",
+      "regeneration_cost": {
+        "amount": null,
+        "currency": "",
+        "per_ha": null,
+        "year": null,
+        "source": ""
+      },
+      "jobs_created": {
+        "short_term": null,
+        "long_term": null,
+        "source": ""
+      },
+      "community_objections": "",
+      "actors": [
+        {
+          "name": "",
+          "sector": "",
+          "role": "",
+          "initiator": null
+        }
+      ],
+      "zoning": "",
+      "nearby_green_spaces": {
+        "names": [],
+        "nearest_distance_m": null,
+        "green_share_pct": null,
+        "buffer_m": null
+      },
+      "surrounding_built_up_pct": null,
+      "surroundings": {
+        "year": null,
+        "buffer_m": null,
+        "spatial_unit": "",
+        "comparison_area": "",
+        "property_value_level": "",
+        "income_level": "",
+        "safety": "",
+        "indicators": [
+          {
+            "name": "",
+            "value": null,
+            "comparison_value": null,
+            "source": ""
+          }
+        ]
+      }
+    },
+    "objects": [
+      {
+        "id": "obj_01",
+        "name": "",
+        "object_class": "",
+        "materials": [],
+        "extent": "",
+        "dimensions": "",
+        "volume_m3": null,
+        "mass_t": null,
+        "position": "",
+        "location_on_site": "",
+        "year_made": null,
+        "form_structural_system": "",
+        "condition_before": "",
+        "fate": "",
+        "intervention_level": "",
+        "visibility": "",
+        "design_potential": "",
+        "source": "",
+        "provenance": ""
+      }
+    ],
+    "images": [],
+    "provenance": {
+      "case": {
+        "tag": "",
+        "evidence_status": "",
+        "field_notes": {}
+      },
+      "site": {
+        "tag": "",
+        "evidence_status": "",
+        "field_notes": {}
+      },
+      "before": {
+        "tag": "",
+        "evidence_status": "",
+        "field_notes": {}
+      },
+      "temporary": {
+        "tag": "",
+        "evidence_status": "",
+        "field_notes": {}
+      },
+      "after": {
+        "tag": "",
+        "evidence_status": "",
+        "field_notes": {}
+      },
+      "objects": {
+        "tag": "",
+        "evidence_status": "",
+        "field_notes": {}
+      }
+    }
+  },
+  "_references": {
+    "field_guide": "analysis/categories/1.1-former-industrial-service-estates_template.json",
+    "field_definitions_cases": "analysis/cases/codebook.json",
+    "field_definitions_objects_images_provenance": "analysis/categories/objects-codebook.json"
+  }
+}
