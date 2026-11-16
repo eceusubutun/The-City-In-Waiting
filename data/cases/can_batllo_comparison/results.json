@@ -1,0 +1,94 @@
+{
+  "case": "Can Batlló",
+  "run_id": "20261116_121510",
+  "provenance": {
+    "tag": "script",
+    "script": "canbatllo_auto.py v0.5",
+    "resample_1m_to_2m": "average",
+    "heights_after": "ICGC DSM 2024 (1 m) - LiDAR 2010 DTM, 2 m grid",
+    "ndvi": "ICGC IRC WMS rendering (not reflectance)"
+  },
+  "before": {
+    "land_cover_pct": {
+      "trees_shrubs": 2.7,
+      "grass_herbaceous": 1.7,
+      "impervious_surface": 22.0,
+      "buildings": 73.6
+    },
+    "vegetation": {
+      "present": true,
+      "tree_canopy_cover_pct": 2.7,
+      "ndvi_mean": -0.267,
+      "vegetation_height_m": 4.9
+    },
+    "nearby_green_spaces": {
+      "names": [
+        "Jardins del Bisbe Joan Carrera",
+        "Jardins del Valent Petit",
+        "Jardí de Francesc Masclans i Girvès",
+        "Mirador del Llobregat",
+        "Parc de Can Sabaté",
+        "Parc de Montjuïc",
+        "Parc de la Font Florida",
+        "Plaça de Buenaventura Durruti",
+        "Plaça de Cal Muns",
+        "Plaça de Can Colom",
+        "Plaça de Maria Aurèlia Capmany",
+        "Plaça de Teresa Claramunt",
+        "Plaça de l'Escorça",
+        "Plaça de la Farga",
+        "Sant Medir"
+      ],
+      "nearest_distance_m": 5,
+      "green_share_pct": 14.9,
+      "buffer_m": 500
+    },
+    "surrounding_built_up_pct": 58.8,
+    "nearest_other_vacant_site_m": 1867
+  },
+  "after": {
+    "land_cover_pct": {
+      "trees_shrubs": 4.9,
+      "grass_herbaceous": 13.4,
+      "impervious_surface": 33.5,
+      "buildings": 48.2
+    },
+    "vegetation": {
+      "present": true,
+      "tree_canopy_cover_pct": 4.9,
+      "ndvi_mean": -0.053,
+      "vegetation_height_m": 5.3
+    },
+    "nearby_green_spaces": {
+      "names": [
+        "Jardins de la Rambla de Sants",
+        "Jardins del Bisbe Joan Carrera",
+        "Jardins del Valent Petit",
+        "Jardí de Francesc Masclans i Girvès",
+        "Mirador del Llobregat",
+        "Parc de Can Sabaté",
+        "Parc de Colita",
+        "Parc de Montjuïc",
+        "Parc de la Font Florida",
+        "Plaça de Buenaventura Durruti",
+        "Plaça de Cal Muns",
+        "Plaça de Can Colom",
+        "Plaça de Josep Pons i Mogas",
+        "Plaça de Maria Aurèlia Capmany",
+        "Plaça de Maria Soteras",
+        "Plaça de Teresa Claramunt",
+        "Plaça de l'Escorça",
+        "Plaça de la Farga",
+        "Sant Medir"
+      ],
+      "nearest_distance_m": 3,
+      "green_share_pct": 23.3,
+      "buffer_m": 500
+    },
+    "surrounding_built_up_pct": 52.6,
+    "retained_fabric": {
+      "building_shell_reused_pct": 54.3,
+      "volume_conserved_m3": 226462
+    }
+  }
+}

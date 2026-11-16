@@ -1,0 +1,433 @@
+{
+  "case": {
+    "id": "1.1-BCN-01",
+    "name": "Can Batlló",
+    "city": "Barcelona",
+    "country": "Spain",
+    "coordinates": {
+      "lat": 41.368393,
+      "lon": 2.137333
+    },
+    "sub_type": "1.1.a",
+    "secondary_types": [
+      "1.1.b"
+    ],
+    "use_history": [
+      "textile factory, 1878-early 1960s",
+      "workshops and warehouses of small businesses, 1960s-?"
+    ],
+    "year_built": 1878,
+    "form_tag": "",
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Can Batlló (SOCRISIS case report, IGOP-UAB)",
+        "author_or_publisher": "Marc Parés, Santi Eizaguirre",
+        "date": "2016",
+        "type": "report",
+        "url": "https://webs.uab.cat/socrisis/wp-content/uploads/sites/39/2020/01/CanBatllo_report.pdf"
+      },
+      {
+        "id": "S2",
+        "title": "Can Batlló - Qui som / Història",
+        "author_or_publisher": "Associació Espai Comunitari i Veïnal Autogestionat de Can Batlló",
+        "date": "accessed 2026-11-13",
+        "type": "project_page",
+        "url": "https://canbatllo.org/can-batllo/#historia"
+      }
+    ]
+  },
+  "site": {
+    "area_m2": 59853,
+    "cadastral_ref": "79021 (parcels 61-64, 73-77, 87)",
+    "parcel_shape": "regular",
+    "shape_index": 1.11,
+    "slope": "gentle",
+    "mean_slope_deg": 1.4,
+    "geology": {
+      "soil_type": "silt",
+      "permeability": "semi_permeable"
+    },
+    "water_proximity_m": 3000,
+    "flood_risk": "",
+    "flood_return_period": "",
+    "location": "inner_city",
+    "urban_network": "embedded",
+    "connectivity": {
+      "nearest_bus_stop_m": 14,
+      "nearest_rail_metro_m": 755,
+      "nearest_main_road_m": 0,
+      "distance_to_centre_km": 3.34,
+      "nearest_local_services_m": 73
+    }
+  },
+  "before": {
+    "years_vacant": null,
+    "cause_of_vacancy": "planning_blight",
+    "secondary_causes": ["waiting_for_redevelopment","land_speculation","economic_crisis"],
+    "status": "underused",
+    "contamination": "suspected",
+    "previous_use_risk": "B",
+    "site_layout": "regular_fragmented",
+    "enclosure": "walled",
+    "vegetation": {
+      "present": true,
+      "tree_canopy_cover_pct": 2.7,
+      "ndvi_mean": -0.27,
+      "vegetation_height_m": 4.9
+    },
+    "succession_stage": "",
+    "land_cover_pct": {
+      "trees_shrubs": 2.7,
+      "grass_herbaceous": 1.7,
+      "bare_earth": 0,
+      "water": 0,
+      "impervious_surface": 21.9,
+      "buildings": 73.7
+    },
+    "surface_substrate": ["asphalt_or_concrete"],
+    "infrastructure": "well_developed",
+    "maintenance": "no_visible_maintenance",
+    "terrain_vague": "yes",
+    "human_traces": ["vehicle_tracks"],
+    "heritage_value": "yes",
+    "access": "restricted",
+    "ownership": {
+      "type": "private",
+      "fragmented": false,
+      "owner_behaviour": "passive"
+    },
+    "reuse_cost": {
+      "amount": 21200000,
+      "currency": "EUR",
+      "year": 2012,
+      "source": "Betevé 2012: value of Guinardó plot swap, earmarked for urbanising Can Batlló (not a cost estimate)"
+    },
+    "response_to_vacancy": ["temporary_use"],
+    "zoning": "MPGM Can Batlló-Magòria 2006 (facilities, green space, housing); previously PGM 1976 facilities and green space",
+    "planning_status": "outline_permission",
+    "surrounding_context": "mixed",
+    "neighbour_sensitivity": "high",
+    "nearby_green_spaces": {
+      "names": [ "Sant Medir",
+        "Parc de la Font Florida",
+        "Mirador del Llobregat",
+        "Parc de Montjuïc",
+        "Plaça de la Farga",
+        "Plaça de Cal Muns",
+        "Jardins del Valent Petit",
+        "Parc de Can Sabaté",
+        "Plaça de Teresa Claramunt",
+        "Plaça de Buenaventura Durruti",
+        "Jardí de Francesc Masclans i Girvès",
+        "Plaça de l'Escorça",
+        "Plaça de Can Colom",
+        "Plaça de Maria Aurèlia Capmany",
+        "Jardins del Bisbe Joan Carrera"
+      ],
+      "nearest_distance_m": 5,
+      "green_share_pct": 14.9,
+      "buffer_m": 500
+    },
+    "surrounding_built_up_pct": 58.8,
+    "nearest_other_vacant_site_m": 1867,
+        "surroundings": {
+      "year": 2010,
+      "buffer_m": null,
+      "spatial_unit": "neighbourhood (barri) La Bordeta",
+      "comparison_area": "Barcelona",
+      "property_value_level": "unknown",
+      "income_level": "low",
+      "safety": "unknown",
+      "indicators": [
+        {
+          "name": "population_density",
+          "value": 32122,
+          "comparison_value": 15960,
+          "source": "Ajuntament de Barcelona, Barri la Bordeta 2010 fact sheet; inhabitants per km2"
+        },
+        {
+          "name": "household_income",
+          "value": 73.4,
+          "comparison_value": 100,
+          "source": "Barri la Bordeta 2010 fact sheet; disposable family income per inhabitant, index Barcelona = 100"
+        },
+        {
+          "name": "foreign_born_pct",
+          "value": 17.2,
+          "comparison_value": 21.8,
+          "source": "Barri la Bordeta 2010 fact sheet"
+        },
+        {
+          "name": "elderly_living_alone_pct",
+          "value": 23.2,
+          "comparison_value": 25.6,
+          "source": "Barri la Bordeta 2010 fact sheet; population over 65 living alone"
+        },
+        {
+          "name": "higher_education_pct",
+          "value": 16.9,
+          "comparison_value": 24.9,
+          "source": "Barri la Bordeta 2011 fact sheet; university and higher vocational (CFGS) graduates / population 16+"
+        },
+        {
+          "name": "other",
+          "value": 6.8,
+          "comparison_value": 6.7,
+          "source": "Barri la Bordeta 2011 fact sheet; registered unemployed / total population (%), not the unemployment rate (1,247 / 18,431; BCN 108,624 / 1,615,985)"
+        }
+      ]
+    }
+  },
+   "temporary": {
+    "type": "self-managed neighbourhood facilities: library, auditorium, bar, workshops, community garden",
+    "type_category": "autonomous",
+    "start_date": "2011-06",
+    "end_date": "ongoing",
+    "duration_months": null,
+    "area_pct": 21.7,
+    "legal_framework": "formal_agreement",
+    "agreement_type": "cession of use (cessió d'ús) of Bloc Onze by the City Council, June 2011; later 50-year concession of c. 13,000 m² to the Associació Espai Comunitari i Veïnal Autogestionat de Can Batlló",
+    "users_count": null,
+    "visitors_per_year": null,
+    "user_rent": "unknown",
+    "funding": "renovation of Bloc Onze financed by the City Council; volunteer work; self-financing decided by the assembly",
+    "reversibility": "permanent_changes",
+    "link_to_permanent_plan": "permanent_plan_defined",
+    "outcome": "stayed",
+    "actors": [
+      {
+        "name": "Plataforma Can Batlló és pel barri",
+        "sector": "civil_society",
+        "role": "community",
+        "initiator": true
+      },
+      {
+        "name": "Ajuntament de Barcelona",
+        "sector": "public",
+        "role": "government",
+        "initiator": false
+      },
+      {
+        "name": "Immogaudir (Grupo Gaudir)",
+        "sector": "private",
+        "role": "site_owner",
+        "initiator": false
+      },
+      {
+        "name": "Lacol (architects' cooperative)",
+        "sector": "private",
+        "role": "consultant",
+        "initiator": false
+      }
+    ]
+  },
+  "after": {
+    "assessment": {
+      "date": "2026-11",
+      "years_after_completion": 2,
+      "phase": "ongoing"
+    },
+    "completion_year": 2024,
+    "new_use": [
+  "green_areas",
+  "agricultural",
+  "public_services",
+  "industrial_craft_storage",
+  "commercial_and_services",
+  "tourism_hospitality_sport",
+  "housing"
+],
+    "end_use_sensitivity": "high",
+    "physical_end_state": "partly_retained",
+    "retained_fabric": {
+      "building_shell_reused_pct": 50.2,
+      "volume_conserved_m3": 210396
+    },
+    "site_layout": "regular_fragmented",
+    "enclosure": "partly_enclosed",
+    "land_cover_pct": {
+  "trees_shrubs": 4.6,
+  "grass_herbaceous": 13.7,
+  "bare_earth": 0,
+  "water": 0,
+  "impervious_surface": 36.1,
+  "buildings": 45.6
+},
+    "vegetation": {
+      "present": true,
+      "tree_canopy_cover_pct": 4.6,
+      "ndvi_mean": -0.053,
+      "vegetation_height_m": 6.4
+    },
+    "surface_substrate": ["asphalt_or_concrete", "soil_clay", "sand"],
+    "infrastructure": "well_developed",
+    "reclaimed_area_m2": 50277,
+    "biodiversity": "increased",
+    "memory_protection": {
+      "memory_tangible": "yes",
+      "memory_intangible": "yes"
+    },
+    "public_access": "partly",
+    "inclusion": "limited",
+    "gentrification": "partial",
+    "governance_type": ["bottom_up", "top_down", "public_private_partnership"],
+    "governance": "partnership",
+    "urban_role": "catalyst",
+    "economic_viability": "subsidised",
+    "regeneration_cost": {
+       "amount": 12300000,
+  "currency": "EUR",
+  "per_ha": 2055035,
+  "year": 2021,
+  "source": "Construible 2021: park phase 1 initial budget (5.4 M from private plot owners); total with phase 2 24.8 M EUR; ReHousIn 2026 gives 12.6 M / 21 M (unreconciled)"
+    },
+    "jobs_created": {
+      "short_term": null,
+      "long_term": null,
+      "source": ""
+    },
+    "community_objections": "Conflict between the City Council and the ECVA over the scope and management of phase 2 and the future of Bloc 11; ECVA assemblies described as exclusionary by some residents; concerns about rising rents and new-build housing around the site (highest new-contract rents in 2023); departure of the >200 small businesses in 2012 after the land transfer (ReHousIn 2026, pp. 15, 17, 48, 53, 55; Betevé 2012).",
+"actors": [
+  { "name": "Ajuntament de Barcelona", "sector": "public", "role": "government", "initiator": false },
+  { "name": "Espai Comunitari i Veïnal Autogestionat Can Batlló (ECVA)", "sector": "civil_society", "role": "community", "initiator": true },
+  { "name": "Generalitat de Catalunya", "sector": "public", "role": "government", "initiator": false },
+  { "name": "La Borda (housing cooperative)", "sector": "civil_society", "role": "end_user", "initiator": false },
+  { "name": "Coòpolis (Bloc 4)", "sector": "civil_society", "role": "end_user", "initiator": false },
+  { "name": "Be-Corp", "sector": "private", "role": "developer", "initiator": false },
+  { "name": "Vía Célere", "sector": "private", "role": "developer", "initiator": false },
+  { "name": "Lacol", "sector": "private", "role": "consultant", "initiator": false }
+],
+"zoning": "MPGM Can Batlló-Magòria, definitively approved 28 July 2017 (qualifications 5, 6b, 6b/p, 6b/18, 7b, 18, 18/HS)",
+    "nearby_green_spaces": {
+  "names": [
+    "Sant Medir",
+    "Parc de la Font Florida",
+    "Mirador del Llobregat",
+    "Parc de Montjuïc",
+    "Plaça de la Farga",
+    "Plaça de Cal Muns",
+    "Jardins del Valent Petit",
+    "Parc de Can Sabaté",
+    "Plaça de Teresa Claramunt",
+    "Plaça de Buenaventura Durruti",
+    "Jardí de Francesc Masclans i Girvès",
+    "Plaça de l'Escorça",
+    "Plaça de Can Colom",
+    "Plaça de Maria Aurèlia Capmany",
+    "Jardins del Bisbe Joan Carrera",
+    "Jardins de la Rambla de Sants",
+    "Parc de Colita",
+    "Plaça de Maria Soteras",
+    "Plaça de Josep Pons i Mogas"
+  ],
+  "nearest_distance_m": 3,
+  "green_share_pct": 23.3,
+  "buffer_m": 500
+},
+"surrounding_built_up_pct": 48.7,
+"surroundings": {
+  "year": 2025,
+  "buffer_m": null,
+  "spatial_unit": "neighbourhood (barri) La Bordeta",
+  "comparison_area": "Barcelona",
+  "property_value_level": "unknown",
+  "income_level": "low",
+  "safety": "unknown",
+  "indicators": [
+    {
+      "name": "population_density",
+      "value": 36386,
+      "comparison_value": 16904,
+      "source": "Barcelona Dades, Població censal per lloc de naixement (INE annual census), 1 Jan 2025: La Bordeta 20,995 ÷ 0.577 km²; Barcelona 1,713,247 ÷ 101.35 km²"
+    },
+    {
+      "name": "foreign_born_pct",
+      "value": 30.6,
+      "comparison_value": 34.6,
+      "source": "Barcelona Dades, Població censal per lloc de naixement, 1 Jan 2025: 6,427 / 20,995; Barcelona 593,121 / 1,713,247"
+    },
+    {
+      "name": "household_income",
+      "value": 89.5,
+      "comparison_value": 100,
+      "source": "Barcelona Dades, RDLpc 2023: 23,328 € / 26,069 € (index Barcelona = 100). New RDLpc series, not comparable with the RFD index used in before (73.4); RDLpc puts La Bordeta at 93.5 already in 2015"
+    },
+    {
+      "name": "elderly_living_alone_pct",
+      "value": null,
+      "comparison_value": null,
+      "source": "not found for ≥ 2023 (Barcelona Dades search pending)"
+    },
+    {
+      "name": "higher_education_pct",
+      "value": null,
+      "comparison_value": null,
+      "source": "not found for ≥ 2023 (Barcelona Dades search pending)"
+    },
+    {
+      "name": "other",
+      "value": null,
+      "comparison_value": null,
+      "source": "registered unemployed / total population: not found for ≥ 2023 (Barcelona Dades search pending)"
+    }
+  ]
+}
+  },
+  "objects": [
+    {
+      "id": "obj_01",
+      "name": "",
+      "object_class": "",
+      "materials": [],
+      "extent": "",
+      "dimensions": "",
+      "volume_m3": null,
+      "mass_t": null,
+      "position": "",
+      "location_on_site": "",
+      "year_made": null,
+      "form_structural_system": "",
+      "condition_before": "",
+      "fate": "",
+      "intervention_level": "",
+      "visibility": "",
+      "design_potential": "",
+      "source": "",
+      "provenance": ""
+    }
+  ],
+  "images": [],
+  "provenance": {
+    "case": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {}
+    },
+    "site": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {}
+    },
+    "before": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {}
+    },
+    "temporary": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {}
+    },
+    "after": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {}
+    },
+    "objects": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {}
+    }
+  }
+}

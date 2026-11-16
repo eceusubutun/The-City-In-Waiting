@@ -138,10 +138,6 @@
         "nearest_main_road_m": null,
         "distance_to_centre_km": null,
         "nearest_local_services_m": null
-      },
-      "nearby_protected_areas": {
-        "names": [],
-        "nearest_distance_m": null
       }
     },
     "before": {
@@ -155,10 +151,7 @@
       "enclosure": "",
       "vegetation": {
         "present": null,
-        "tree_count_per_ha": null,
         "tree_canopy_cover_pct": null,
-        "plantable_space_pct": null,
-        "tree_species_count": null,
         "ndvi_mean": null,
         "vegetation_height_m": null
       },
@@ -271,10 +264,7 @@
       },
       "vegetation": {
         "present": null,
-        "tree_count_per_ha": null,
         "tree_canopy_cover_pct": null,
-        "plantable_space_pct": null,
-        "tree_species_count": null,
         "ndvi_mean": null,
         "vegetation_height_m": null
       },
