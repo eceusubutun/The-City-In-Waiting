@@ -1,0 +1,66 @@
+year,field,manual,script,diff
+,site.area_m2,59853,60466,613
+,site.shape_index,1.11,1.17,0.06
+,case.lat,41.368393,41.36838,-0.0
+,case.lon,2.137333,2.13724,-0.0
+2010,nearest_other_vacant_site_m,1867,1867,0
+2010,ndvi_mean,-0.27,-0.267,0.003
+2010,vegetated_pct,4.4,4.3,-0.1
+2010,green_share_pct,14.9,14.8,-0.1
+2010,park_names_count,15,15,0
+2010,nearest_park_m,5,5,0
+2025,ndvi_mean,-0.053,-0.056,-0.003
+2025,vegetated_pct,18.3,18.3,0.0
+2025,green_share_pct,23.3,23.3,0.0
+2025,park_names_count,19,19,0
+2025,nearest_park_m,3,3,0
+,nearest_bus_stop_m,14,1,-13
+,nearest_rail_metro_m,755,428,-327
+,nearest_main_road_m,0,14,14
+,distance_to_centre_km,3.34,3.33,-0.01
+,nearest_local_services_m,73,40,-33
+,water_proximity_m,3000,2518,-482
+2010,buildings,73.7,73.7,0.0
+2010,trees_shrubs,2.7,2.7,0.0
+2010,grass_herbaceous,1.7,1.6,-0.1
+2010,impervious_surface,21.9,22.0,0.1
+2010,vegetation_height_m,4.9,4.9,0.0
+2010,surrounding_built_up_pct,58.8,58.2,-0.6
+2025,buildings,45.6,48.2,2.6
+2025,trees_shrubs,4.6,4.9,0.3
+2025,grass_herbaceous,13.7,13.4,-0.3
+2025,impervious_surface,36.1,33.5,-2.6
+2025,vegetation_height_m,6.4,5.2,-1.2
+2025,surrounding_built_up_pct,48.7,52.0,3.3
+2025,building_shell_reused_pct,50.2,54.4,4.2
+2025,volume_conserved_m3,210396,226934,16538
+,mean_slope_deg,1.4,2.1,0.7
+,parcel_shape,regular,regular,same
+,location,inner_city,inner_city,same
+,urban_network,embedded,embedded,same
+,biodiversity,increased,increased,same
+,succession_stage,(pending),unknown,different
+,surrounding_context,mixed,residential,different
+,neighbour_sensitivity,high,high,same
+,physical_end_state,partly_retained,partly_retained,same
+,cadastral_ref,"79021 (parcels 61-64, 73-77, 87)","79021 (parcels 62, 64, 72, 73, 74, 75, 76, 77, 81, 86, 87)",
+,geology,silt / semi_permeable,silt / semi_permeable,
+,flood_risk,unknown,outside,
+,after.zoning,"MPGM 2017: 5, 6b, 6b/p, 6b/18, 7b, 18, 18/HS",MUC (Jan 2023): SV Zona verda en ordenació en volumetria específica 57 %; SE Equipaments comunitaris i dotacions 38 %; SX2 Sistema viari: eix no estructurant en sòl urbà 3 %; R4 Ordenació en volumetria específica 1 %,
+2010,population_density (barri),32122,31811,-311
+2010,foreign_born_pct (barri),17.2,16.7,-0.5
+2010,higher_education_pct (barri),16.9,17.8,0.9
+2010,elderly_living_alone_pct (barri),23.2,22.1,-1.1
+2025,population_density (barri),36386,36242,-144
+2025,foreign_born_pct (barri),30.6,31.4,0.8
+2025,higher_education_pct (barri),,31.9,
+2025,elderly_living_alone_pct (barri),,23.6,
+,before.enclosure,"""walled""","""walled""",same
+,after.enclosure,"""partly_enclosed""","""partly_enclosed""",same
+,before.site_layout,"""regular_fragmented""","""regular_fragmented""",same
+,after.site_layout,"""regular_fragmented""","""regular_fragmented""",same
+,before.surface_substrate,"[""asphalt_or_concrete""]","[""asphalt_or_concrete""]",same
+,after.surface_substrate,"[""asphalt_or_concrete"", ""soil_clay"", ""sand""]","[""asphalt_or_concrete"", ""soil_clay""]",different
+,before.infrastructure,"""well_developed""","""well_developed""",same
+,after.infrastructure,"""well_developed""","""well_developed""",same
+,after.reclaimed_area_m2,50277,56756,different

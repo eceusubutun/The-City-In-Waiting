@@ -1,0 +1,700 @@
+{
+  "case": {
+    "id": "1.1-BCN-01",
+    "name": "Can Batlló",
+    "city": "Barcelona",
+    "country": "Spain",
+    "coordinates": {
+      "lat": 41.36838,
+      "lon": 2.13724
+    },
+    "sub_type": "1.1.a",
+    "secondary_types": [
+      "1.1.b"
+    ],
+    "use_history": [
+      "textile factory, 1878-early 1960s",
+      "workshops and warehouses of small businesses, 1960s-?"
+    ],
+    "year_built": 1878,
+    "form_tag": "",
+    "sources": [
+      {
+        "id": "S1",
+        "title": "OpenStreetMap (Overpass API, is_in query)",
+        "author_or_publisher": "OpenStreetMap contributors",
+        "date": "2026-11-16",
+        "type": "dataset",
+        "url": "https://www.openstreetmap.org"
+      },
+      {
+        "id": "S2",
+        "title": "Ortofoto de Catalunya infraroig 25 cm 2010 (WMS)",
+        "author_or_publisher": "ICGC",
+        "date": "2010",
+        "type": "orthophoto",
+        "url": "https://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms"
+      },
+      {
+        "id": "S3",
+        "title": "Ortofoto de Catalunya infraroig 25 cm 2025 (WMS)",
+        "author_or_publisher": "ICGC",
+        "date": "2025",
+        "type": "orthophoto",
+        "url": "https://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms"
+      },
+      {
+        "id": "S4",
+        "title": "Urban Atlas 2012, Barcelona (code 13400)",
+        "author_or_publisher": "Copernicus Land Monitoring Service",
+        "date": "2012",
+        "type": "dataset",
+        "url": "https://land.copernicus.eu/en/products/urban-atlas"
+      },
+      {
+        "id": "S5",
+        "title": "LiDAR 2010 DTM / nDSM (2 m) and correlation DSM 2024 (1 m)",
+        "author_or_publisher": "ICGC",
+        "date": "2010; 2024",
+        "type": "dataset",
+        "url": "https://www.icgc.cat"
+      },
+      {
+        "id": "S6",
+        "title": "Urban Atlas 2012, Barcelona (land use in the 500 m ring)",
+        "author_or_publisher": "Copernicus Land Monitoring Service",
+        "date": "2012",
+        "type": "dataset",
+        "url": "https://land.copernicus.eu/en/products/urban-atlas"
+      },
+      {
+        "id": "S7",
+        "title": "Catastro INSPIRE cadastral parcels (WFS)",
+        "author_or_publisher": "Dirección General del Catastro",
+        "date": "2026-11-16",
+        "type": "cadastre",
+        "url": "https://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx"
+      },
+      {
+        "id": "S8",
+        "title": "Mapa geològic de Catalunya 1:50.000 (WMS Geologia territorial)",
+        "author_or_publisher": "ICGC",
+        "date": "2026",
+        "type": "dataset",
+        "url": "https://geoserveis.icgc.cat/servei/catalunya/geologia-territorial/wms"
+      },
+      {
+        "id": "S9",
+        "title": "Mapa Urbanístic de Catalunya (MUC), qualificació",
+        "author_or_publisher": "Generalitat de Catalunya / Diputació de Barcelona",
+        "date": "2023-01",
+        "type": "plan",
+        "url": "https://gissrv.diba.cat/arcgis/rest/services/CARTOBASE/MUC/MapServer"
+      },
+      {
+        "id": "S10",
+        "title": "SNCZI flood zones (IDEE INSPIRE WMS riesgos-naturales/inundaciones)",
+        "author_or_publisher": "MITECO / IGN",
+        "date": "2026-11-16",
+        "type": "dataset",
+        "url": "https://servicios.idee.es/wms-inspire/riesgos-naturales/inundaciones"
+      },
+      {
+        "id": "S11",
+        "title": "Padró municipal d'habitants (Open Data BCN)",
+        "author_or_publisher": "Ajuntament de Barcelona",
+        "date": "2010; 2025",
+        "type": "dataset",
+        "url": "https://opendata-ajuntament.barcelona.cat"
+      },
+      {
+        "id": "S12",
+        "title": "https://ajuntament.barcelona.cat/sants-montjuic/es/noticia/abierto-el-nuevo-parque-de-can-batllo-1457803",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "report",
+        "url": "https://ajuntament.barcelona.cat/sants-montjuic/es/noticia/abierto-el-nuevo-parque-de-can-batllo-1457803"
+      },
+      {
+        "id": "S13",
+        "title": "https://web.archive.org/web/20190525104641/https://ajuntament.barcelona.cat/participaciociutadana/es/noticia/se-aprueba-la-concesion-de-can-batllo-a-la-asociacion-espacio-comunitario-y-vecinal-autogestionado_789812",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "report",
+        "url": "https://web.archive.org/web/20190525104641/https://ajuntament.barcelona.cat/participaciociutadana/es/noticia/se-aprueba-la-concesion-de-can-batllo-a-la-asociacion-espacio-comunitario-y-vecinal-autogestionado_789812"
+      },
+      {
+        "id": "S14",
+        "title": "Can Batlló (SOCRISIS case report, IGOP-UAB)",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "paper",
+        "url": "https://webs.uab.cat/socrisis/wp-content/uploads/sites/39/2020/01/CanBatllo_report.pdf"
+      },
+      {
+        "id": "S15",
+        "title": "Ontologies and knowledges of autonomous resistances in Barcelona : an ethnographic analysis of Can Batlló (2018)",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "paper",
+        "url": "http://hdl.handle.net/10454/17368"
+      },
+      {
+        "id": "S16",
+        "title": "tier1_16052.pdf",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "report",
+        "url": "file:///C:/gis/auto_case/can_batllo/documents/manual_pdfs/tier1_16052.pdf"
+      },
+      {
+        "id": "S17",
+        "title": "tier1_Can Batlló - Agreement_vEnglish_Censurado.pdf",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "report",
+        "url": "file:///C:/gis/auto_case/can_batllo/documents/manual_pdfs/tier1_Can Batlló - Agreement_vEnglish_Censurado.pdf"
+      },
+      {
+        "id": "S18",
+        "title": "tier1_Can Batlló - Schedule of clauses regulating_vEnglish (1).pdf",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "report",
+        "url": "file:///C:/gis/auto_case/can_batllo/documents/manual_pdfs/tier1_Can Batlló - Schedule of clauses regulating_vEnglish (1).pdf"
+      },
+      {
+        "id": "S19",
+        "title": "tier1_NP_Can_Batlló_06022017.pdf",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "report",
+        "url": "file:///C:/gis/auto_case/can_batllo/documents/manual_pdfs/tier1_NP_Can_Batlló_06022017.pdf"
+      },
+      {
+        "id": "S20",
+        "title": "tier1_Presentació Parc de Can Batlló 9-01-2020.pdf",
+        "author_or_publisher": "",
+        "date": "",
+        "type": "report",
+        "url": "file:///C:/gis/auto_case/can_batllo/documents/manual_pdfs/tier1_Presentació Parc de Can Batlló 9-01-2020.pdf"
+      }
+    ]
+  },
+  "site": {
+    "area_m2": 60466,
+    "cadastral_ref": "79021 (parcels 62, 64, 72, 73, 74, 75, 76, 77, 81, 86, 87)",
+    "parcel_shape": "regular",
+    "shape_index": 1.17,
+    "slope": "gentle",
+    "mean_slope_deg": 2.1,
+    "geology": {
+      "soil_type": "silt",
+      "permeability": "semi_permeable"
+    },
+    "water_proximity_m": 2518,
+    "flood_risk": "outside",
+    "flood_return_period": "T100",
+    "location": "inner_city",
+    "urban_network": "embedded",
+    "connectivity": {
+      "nearest_bus_stop_m": 1,
+      "nearest_rail_metro_m": 428,
+      "nearest_main_road_m": 14,
+      "nearest_local_services_m": 40,
+      "distance_to_centre_km": 3.33
+    }
+  },
+  "before": {
+    "years_vacant": null,
+    "cause_of_vacancy": "planning_blight",
+    "secondary_causes": [
+      "waiting_for_redevelopment",
+      "land_speculation",
+      "economic_crisis"
+    ],
+    "status": "underused",
+    "contamination": "present",
+    "previous_use_risk": "B",
+    "site_layout": "regular_fragmented",
+    "enclosure": "walled",
+    "vegetation": {
+      "present": true,
+      "tree_canopy_cover_pct": 2.7,
+      "ndvi_mean": -0.267,
+      "vegetation_height_m": 4.9
+    },
+    "succession_stage": "unknown",
+    "land_cover_pct": {
+      "trees_shrubs": 2.7,
+      "grass_herbaceous": 1.6,
+      "bare_earth": null,
+      "water": null,
+      "impervious_surface": 22.0,
+      "buildings": 73.7
+    },
+    "surface_substrate": [
+      "asphalt_or_concrete"
+    ],
+    "infrastructure": "well_developed",
+    "maintenance": "",
+    "terrain_vague": "",
+    "human_traces": [],
+    "heritage_value": "yes",
+    "access": "restricted",
+    "ownership": {
+      "type": "private",
+      "fragmented": false,
+      "owner_behaviour": "passive"
+    },
+    "reuse_cost": {
+      "amount": 21200000,
+      "currency": "EUR",
+      "year": 2012,
+      "source": "Betevé 2012: value of Guinardó plot swap, earmarked for urbanising Can Batlló (not a cost estimate)"
+    },
+    "response_to_vacancy": [
+      "temporary_use"
+    ],
+    "zoning": "MPGM Can Batlló-Magòria 2006 (facilities, green space, housing); previously PGM 1976 facilities and green space",
+    "planning_status": "outline_permission",
+    "surrounding_context": "residential",
+    "neighbour_sensitivity": "high",
+    "nearby_green_spaces": {
+      "names": [
+        "Jardins del Bisbe Joan Carrera",
+        "Jardins del Valent Petit",
+        "Jardí de Francesc Masclans i Girvès",
+        "Mirador del Llobregat",
+        "Parc de Can Sabaté",
+        "Parc de Montjuïc",
+        "Parc de la Font Florida",
+        "Plaça de Buenaventura Durruti",
+        "Plaça de Cal Muns",
+        "Plaça de Can Colom",
+        "Plaça de Maria Aurèlia Capmany",
+        "Plaça de Teresa Claramunt",
+        "Plaça de l'Escorça",
+        "Plaça de la Farga",
+        "Sant Medir"
+      ],
+      "nearest_distance_m": 5,
+      "green_share_pct": 14.8,
+      "buffer_m": 500
+    },
+    "surrounding_built_up_pct": 58.2,
+    "nearest_other_vacant_site_m": 1867,
+    "surroundings": {
+      "year": 2010,
+      "buffer_m": null,
+      "spatial_unit": "neighbourhood (barri la Bordeta)",
+      "comparison_area": "Barcelona (city)",
+      "property_value_level": "",
+      "income_level": "",
+      "safety": "",
+      "indicators": [
+        {
+          "name": "population_density",
+          "value": 31811,
+          "comparison_value": 15976,
+          "source": "Open Data BCN, padró 1 Jan 2010 (pad_mdbas; area from OSM outline); computed by auto_case.py (20261116_204608)"
+        },
+        {
+          "name": "foreign_born_pct",
+          "value": 16.7,
+          "comparison_value": 21.0,
+          "source": "Open Data BCN, padró 1 Jan 2010 (pad_mdbas_lloc-naix_sexe); computed by auto_case.py (20261116_204608)"
+        },
+        {
+          "name": "higher_education_pct",
+          "value": 17.8,
+          "comparison_value": 25.4,
+          "source": "Open Data BCN, padró 1 Jan 2010 (pad_mdbas_niv-educa-esta_sexe, population 16+); computed by auto_case.py (20261116_204608)"
+        },
+        {
+          "name": "elderly_living_alone_pct",
+          "value": 22.1,
+          "comparison_value": 25.1,
+          "source": "Open Data BCN, padró 1 Jan 2010 (pad_sol_mdb_sexe_edat-q / pad_mdbas_edat-q, 65+); computed by auto_case.py (20261116_204608)"
+        }
+      ]
+    }
+  },
+  "temporary": {
+    "type": "self-managed neighbourhood facilities: library, auditorium, bar, workshops, community garden",
+    "type_category": "autonomous",
+    "start_date": "2011-06",
+    "end_date": "ongoing",
+    "duration_months": 185,
+    "area_pct": 21.5,
+    "legal_framework": "formal_agreement",
+    "agreement_type": "cession of use (cessió d'ús) of Bloc Onze by the City Council, June 2011; later 50-year concession of c. 13,000 m² to the Associació Espai Comunitari i Veïnal Autogestionat de Can Batlló",
+    "users_count": null,
+    "visitors_per_year": 48000,
+    "user_rent": "€650 per year",
+    "funding": "renovation of Bloc Onze financed by the City Council; volunteer work; self-financing decided by the assembly",
+    "reversibility": "permanent_changes",
+    "link_to_permanent_plan": "permanent_plan_defined",
+    "outcome": "stayed",
+    "actors": [
+      {
+        "name": "Plataforma Can Batlló és pel barri",
+        "sector": "civil_society",
+        "role": "community",
+        "initiator": true
+      },
+      {
+        "name": "Ajuntament de Barcelona",
+        "sector": "public",
+        "role": "government",
+        "initiator": false
+      },
+      {
+        "name": "Immogaudir (Grupo Gaudir)",
+        "sector": "private",
+        "role": "site_owner",
+        "initiator": false
+      },
+      {
+        "name": "Lacol (architects' cooperative)",
+        "sector": "private",
+        "role": "consultant",
+        "initiator": false
+      }
+    ]
+  },
+  "after": {
+    "assessment": {
+      "date": "2026-11",
+      "years_after_completion": 2,
+      "phase": "ongoing"
+    },
+    "completion_year": 2024,
+    "new_use": [
+      "green_areas",
+      "agricultural",
+      "public_services",
+      "industrial_craft_storage",
+      "commercial_and_services",
+      "tourism_hospitality_sport",
+      "housing"
+    ],
+    "end_use_sensitivity": "high",
+    "physical_end_state": "partly_retained",
+    "retained_fabric": {
+      "building_shell_reused_pct": 54.4,
+      "volume_conserved_m3": 226934
+    },
+    "site_layout": "regular_fragmented",
+    "enclosure": "partly_enclosed",
+    "land_cover_pct": {
+      "trees_shrubs": 4.9,
+      "grass_herbaceous": 13.4,
+      "bare_earth": null,
+      "water": null,
+      "impervious_surface": 33.5,
+      "buildings": 48.2
+    },
+    "vegetation": {
+      "present": true,
+      "tree_canopy_cover_pct": 4.9,
+      "ndvi_mean": -0.056,
+      "vegetation_height_m": 5.2
+    },
+    "surface_substrate": [
+      "asphalt_or_concrete",
+      "soil_clay"
+    ],
+    "infrastructure": "well_developed",
+    "reclaimed_area_m2": 56756,
+    "biodiversity": "increased",
+    "memory_protection": {
+      "memory_tangible": "",
+      "memory_intangible": "yes"
+    },
+    "public_access": "partly",
+    "inclusion": "limited",
+    "gentrification": "partial",
+    "governance_type": [
+      "bottom_up",
+      "top_down",
+      "public_private_partnership"
+    ],
+    "governance": "partnership",
+    "urban_role": "catalyst",
+    "economic_viability": "subsidised",
+    "regeneration_cost": {
+      "amount": 23862362,
+      "currency": "EUR",
+      "per_ha": 3986828,
+      "year": 2024,
+      "source": "Ajuntament de Barcelona, 23 Nov 2024: total cost of park phase 1"
+    },
+    "jobs_created": {
+      "short_term": null,
+      "long_term": null,
+      "source": ""
+    },
+    "community_objections": "Conflict between the City Council and the ECVA over the scope and management of phase 2 and the future of Bloc 11; ECVA assemblies described as exclusionary by some residents; concerns about rising rents and new-build housing around the site (highest new-contract rents in 2023); departure of the >200 small businesses in 2012 after the land transfer (ReHousIn 2026, pp. 15, 17, 48, 53, 55; Betevé 2012).",
+    "actors": [
+      {
+        "name": "Ajuntament de Barcelona",
+        "sector": "public",
+        "role": "government",
+        "initiator": false
+      },
+      {
+        "name": "Espai Comunitari i Veïnal Autogestionat Can Batlló (ECVA)",
+        "sector": "civil_society",
+        "role": "community",
+        "initiator": true
+      },
+      {
+        "name": "Generalitat de Catalunya",
+        "sector": "public",
+        "role": "government",
+        "initiator": false
+      },
+      {
+        "name": "La Borda (housing cooperative)",
+        "sector": "civil_society",
+        "role": "end_user",
+        "initiator": false
+      },
+      {
+        "name": "Coòpolis (Bloc 4)",
+        "sector": "civil_society",
+        "role": "end_user",
+        "initiator": false
+      },
+      {
+        "name": "Be-Corp",
+        "sector": "private",
+        "role": "developer",
+        "initiator": false
+      },
+      {
+        "name": "Vía Célere",
+        "sector": "private",
+        "role": "developer",
+        "initiator": false
+      },
+      {
+        "name": "Lacol",
+        "sector": "private",
+        "role": "consultant",
+        "initiator": false
+      }
+    ],
+    "zoning": "MUC (Jan 2023): SV Zona verda en ordenació en volumetria específica 57 %; SE Equipaments comunitaris i dotacions 38 %; SX2 Sistema viari: eix no estructurant en sòl urbà 3 %; R4 Ordenació en volumetria específica 1 %",
+    "nearby_green_spaces": {
+      "names": [
+        "Jardins de la Rambla de Sants",
+        "Jardins del Bisbe Joan Carrera",
+        "Jardins del Valent Petit",
+        "Jardí de Francesc Masclans i Girvès",
+        "Mirador del Llobregat",
+        "Parc de Can Sabaté",
+        "Parc de Colita",
+        "Parc de Montjuïc",
+        "Parc de la Font Florida",
+        "Plaça de Buenaventura Durruti",
+        "Plaça de Cal Muns",
+        "Plaça de Can Colom",
+        "Plaça de Josep Pons i Mogas",
+        "Plaça de Maria Aurèlia Capmany",
+        "Plaça de Maria Soteras",
+        "Plaça de Teresa Claramunt",
+        "Plaça de l'Escorça",
+        "Plaça de la Farga",
+        "Sant Medir"
+      ],
+      "nearest_distance_m": 3,
+      "green_share_pct": 23.3,
+      "buffer_m": 500
+    },
+    "surrounding_built_up_pct": 52.0,
+    "surroundings": {
+      "year": 2025,
+      "buffer_m": null,
+      "spatial_unit": "neighbourhood (barri la Bordeta)",
+      "comparison_area": "Barcelona (city)",
+      "property_value_level": "",
+      "income_level": "",
+      "safety": "",
+      "indicators": [
+        {
+          "name": "population_density",
+          "value": 36242,
+          "comparison_value": 17085,
+          "source": "Open Data BCN, padró 1 Jan 2025 (pad_mdbas; area from OSM outline); computed by auto_case.py (20261116_204608)"
+        },
+        {
+          "name": "foreign_born_pct",
+          "value": 31.4,
+          "comparison_value": 35.3,
+          "source": "Open Data BCN, padró 1 Jan 2025 (pad_mdbas_lloc-naix_sexe); computed by auto_case.py (20261116_204608)"
+        },
+        {
+          "name": "higher_education_pct",
+          "value": 31.9,
+          "comparison_value": 37.0,
+          "source": "Open Data BCN, padró 1 Jan 2025 (pad_mdbas_niv-educa-esta_sexe, population 16+); computed by auto_case.py (20261116_204608)"
+        },
+        {
+          "name": "elderly_living_alone_pct",
+          "value": 23.6,
+          "comparison_value": 26.0,
+          "source": "Open Data BCN, padró 1 Jan 2025 (pad_sol_mdb_sexe_edat-q / pad_mdbas_edat-q, 65+); computed by auto_case.py (20261116_204608)"
+        }
+      ]
+    }
+  },
+  "objects": [
+    {
+      "id": "obj_01",
+      "name": "",
+      "object_class": "",
+      "materials": [],
+      "extent": "",
+      "dimensions": "",
+      "volume_m3": null,
+      "mass_t": null,
+      "position": "",
+      "location_on_site": "",
+      "year_made": null,
+      "form_structural_system": "",
+      "condition_before": "",
+      "fate": "",
+      "intervention_level": "",
+      "visibility": "",
+      "design_potential": "",
+      "source": "",
+      "provenance": ""
+    }
+  ],
+  "images": [],
+  "provenance": {
+    "case": {
+      "tag": "source_documented",
+      "evidence_status": "",
+      "field_notes": {
+        "coordinates": "centroid of boundary file, script",
+        "city, country": "OSM admin areas containing the centre (S1)",
+        "use_history": "manual value (Ece), kept during review 2026-11-16",
+        "year_built": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S20: \"1878 INAUGURACIÓ DE BATLLÓ I BATLLÓ AL SEU ACTUAL EMPLAÇAMENT\" (page 5)",
+        "sub_type": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S16: \"«recinte industrial de Can Batlló»\" (page 2)",
+        "secondary_types": "manual value (Ece), kept during review 2026-11-16"
+      }
+    },
+    "site": {
+      "tag": "source_documented",
+      "evidence_status": "",
+      "field_notes": {
+        "area_m2, shape_index": "computed by script from can_batllo_boundary_25831.gpkg",
+        "connectivity": "OSM, straight line from site edge: bus = highway=bus_stop; rail/metro = metro stations (railway=station, station=subway, FGC excluded); main road = motorway/trunk/primary, measured to the road centre line; local services = nearest supermarket outside the site; centre = Plaça de Catalunya; computed by auto_case.py (20261116_204608)",
+        "water_proximity_m": "OSM coastline (sea), rivers, lakes, reservoirs; canals, fountains, ponds and culverted streams excluded; computed by auto_case.py (20261116_204608)",
+        "mean_slope_deg, slope": "slope of the 2010 LiDAR DTM averaged to 10 m, mean over the site; gentle < 2.9 deg (5 %); computed by auto_case.py (20261116_204608)",
+        "parcel_shape": "rule: shape_index 1.17, long/short side 1.34; computed by auto_case.py (20261116_204608)",
+        "location": "rule: 3.33 km / R 5.68 km (municipality 101.4 km2) = 0.59; non-urban land within 500 m: not needed; computed by auto_case.py (20261116_204608)",
+        "urban_network": "rule: water 2518 m; above-ground train stations <= 100 m: 0; rail yards <= 100 m: 0; built-up ring 2010: 58.2 %; computed by auto_case.py (20261116_204608)",
+        "cadastral_ref": "Catastro INSPIRE WFS (CP.CadastralParcel, 2026-11-16): parcels with >= 50 % of their area inside the boundary; 11 parcels, 64276 m2; full references: 7902162DF2870B, 7902164DF2870B, 7902172DF2870B, 7902173DF2870B, 7902174DF2870B, 7902175DF2870B, 7902176DF2870B, 7902177DF2870B, 7902181DF2870B, 7902186DF2870B, 7902187DF2870B; computed by auto_case.py (20261116_204608)",
+        "geology": "ICGC geological map 1:50,000 (unitats-geologiques-50000), 9 points inside the site; units Qbcn x9; main unit Qbcn: 'Argiles amb bretxes a la base, nivell de loess amb nòduls de calitx i crosta de calitx al sostre. Dipòsit de plana al·luvial del \"Tricicle\" del Pla de Barcelona'; soil_type = first lithology named in the description, but clay + silt/loess together -> silt (decision Ece); permeability from soil_type (gravel/sand permeable, silt semi_permeable, clay impermeable); computed by auto_case.py (20261116_204608)",
+        "flood_risk": "SNCZI flood zones via IDEE INSPIRE WMS (fluvial and marine T100), 9 points inside the site and 9 points 25 m outside; flooded = water depth value 0-900 (999 / no-data = not flooded); covers mapped river and coastal reaches only, not urban runoff; computed by auto_case.py (20261116_204608)"
+      }
+    },
+    "before": {
+      "tag": "source_documented",
+      "evidence_status": "",
+      "field_notes": {
+        "vegetation.present, vegetation.ndvi_mean": "ICGC infrared orthophoto 2010, 25 cm, NDVI > 0; computed by auto_case.py (20261116_204608)",
+        "nearby_green_spaces": "OSM leisure=park in 500 m buffer, kept if >= 0.1 green in 2010; green share = NDVI > 0 in ring, 1 m; computed by auto_case.py (20261116_204608)",
+        "nearest_other_vacant_site_m": "Urban Atlas 2012 code 13400, nearest polygon not touching the site; computed by auto_case.py (20261116_204608)",
+        "land_cover_pct, tree canopy, vegetation height": "2 m grid: building = height > 2.5 m and not vegetated; tree = height > 2 m and vegetated; grass = vegetated minus trees; impervious = rest (bare_earth and water not separated); 1 m -> 2 m resampling: average; computed by auto_case.py (20261116_204608)",
+        "surrounding_built_up_pct": "building cells in the 500 m ring x cell area / ring area; computed by auto_case.py (20261116_204608)",
+        "succession_stage": "rule: vegetated 4.3 %, trees 63 % of the green, height 4.9 m; planted vs spontaneous not detectable; computed by auto_case.py (20261116_204608)",
+        "surrounding_context": "rule: Urban Atlas 2012 in the 500 m ring: residential 56.9 % of ring, industrial/commercial 9.2 % of ring; residential = 86 % of residential + industrial/commercial land (UA does not split industrial from commercial); computed by auto_case.py (20261116_204608)",
+        "neighbour_sensitivity": "rule: Urban Atlas 2012 in the 500 m ring: residential 56.9 % of ring, industrial/commercial 9.2 % of ring; residential = 86 % of residential + industrial/commercial land (UA does not split industrial from commercial); computed by auto_case.py (20261116_204608)",
+        "surroundings": "indicators from the municipal register (padró) 1 Jan 2010, same source both years; foreign-born = born in the rest of the EU or the rest of the world; higher education = tertiary (16+); 'not available' excluded from the denominators; elderly living alone = people 65+ living alone / people 65+; '..' (hidden small counts) counted as 0; income, unemployment, property value and safety not automated (no series for both years); computed by auto_case.py (20261116_204608)",
+        "enclosure": "rule: 81.8 % of the boundary closed (576 points every 2 m: height >= 1.5 m non-vegetation 2010 471, OSM walls 0, OSM fences 0; OSM of today (historic OSM not available)); fences are seldom visible in heights; computed by auto_case.py (20261116_204608)",
+        "site_layout": "rule: parcel_shape regular; public streets/paths in the area 139 (OSM of today (historic OSM not available)); after cutting them: 43 pieces, largest 56.7 % of the site (fragmented if < 75 %); buildings 73.7 %; computed by auto_case.py (20261116_204608)",
+        "surface_substrate": "rule: impervious 22.0 %, bare earth + grass 1.6 %; finer classes need the image step; computed by auto_case.py (20261116_204608)",
+        "infrastructure": "rule: urban_network embedded, nearest main road 14 m; computed by auto_case.py (20261116_204608)",
+        "years_vacant": "manual value (Ece), kept during review 2026-11-16",
+        "cause_of_vacancy": "manual value (Ece), kept during review 2026-11-16",
+        "secondary_causes": "manual value (Ece), kept during review 2026-11-16",
+        "status": "manual value (Ece), kept during review 2026-11-16",
+        "contamination": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S12: \"“ha habido que afrontar la descontaminación del suelo”\" (section)",
+        "previous_use_risk": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S14: \"“textile manufacturing complex”\" (page 2)",
+        "ownership": "manual value (Ece), kept during review 2026-11-16",
+        "reuse_cost": "manual value (Ece), kept during review 2026-11-16",
+        "response_to_vacancy": "manual value (Ece), kept during review 2026-11-16",
+        "zoning": "manual value (Ece), kept during review 2026-11-16",
+        "planning_status": "manual value (Ece), kept during review 2026-11-16",
+        "heritage_value": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S12: \"“integrando el patrimonio industrial”\" (section)",
+        "access": "manual value (Ece), kept during review 2026-11-16"
+      }
+    },
+    "temporary": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {
+        "type": "manual value (Ece), kept during review 2026-11-16",
+        "type_category": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S15: \"Can Batlló is an autonomous and self-organised social centre\" (Abstract)",
+        "start_date": "manual value (Ece), kept during review 2026-11-16",
+        "end_date": "manual value (Ece), kept during review 2026-11-16",
+        "legal_framework": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S17: \"on 9 June 2011 Barcelona City Council signed the first agreement to assign the Can Batlló site spaces to resident and community use and management.\" (page 2)",
+        "agreement_type": "manual value (Ece), kept during review 2026-11-16",
+        "visitors_per_year": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S13: \"Durante el año 2017, un total de 48.000 personas usuarias\" (source text)",
+        "user_rent": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S18: \"the concession holder shall pay an annual social rent of €650\" (page 3)",
+        "funding": "manual value (Ece), kept during review 2026-11-16",
+        "reversibility": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S12: \"“derribos totales o parciales de diversas naves del complejo”\" (section)",
+        "link_to_permanent_plan": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S12: \"“La segunda fase de la ejecución del parque de Can Batlló”\" (section)",
+        "outcome": "manual value (Ece), kept during review 2026-11-16",
+        "actors": "manual value (Ece), kept during review 2026-11-16",
+        "duration_months": "derived: start_date 2011-06 to ongoing (ongoing, counted to 2026-11)",
+        "area_pct": "derived: 13000 m² of temporary use / site area 60466 m²; area from ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S13: \"Los 13.000 metros cuadrados del recinto\" (source text)"
+      }
+    },
+    "after": {
+      "tag": "source_documented",
+      "evidence_status": "",
+      "field_notes": {
+        "vegetation.present, vegetation.ndvi_mean": "ICGC infrared orthophoto 2025, 25 cm, NDVI > 0; computed by auto_case.py (20261116_204608)",
+        "nearby_green_spaces": "OSM leisure=park in 500 m buffer, kept if >= 0.1 green in 2025; green share = NDVI > 0 in ring, 1 m; computed by auto_case.py (20261116_204608)",
+        "land_cover_pct, tree canopy, vegetation height": "2 m grid: building = height > 2.5 m and not vegetated; tree = height > 2 m and vegetated; grass = vegetated minus trees; impervious = rest (bare_earth and water not separated); 1 m -> 2 m resampling: average; computed by auto_case.py (20261116_204608)",
+        "surrounding_built_up_pct": "building cells in the 500 m ring x cell area / ring area; computed by auto_case.py (20261116_204608)",
+        "retained_fabric": "building in both years and height change < 2 m, share of 2010 building cells; volume = 2010 height x cell area; computed by auto_case.py (20261116_204608)",
+        "biodiversity": "rule: vegetated share 4.3 -> 18.3 % (14.0 pts); 'replaced' not detectable; WMS NDVI not fully comparable across years; computed by auto_case.py (20261116_204608)",
+        "physical_end_state": "rule: retained 54.4 % of 2010 building cells; buildings after 48.2 %; >= 90 % written as adapted (retained vs adapted needs judgement); computed by auto_case.py (20261116_204608)",
+        "zoning": "Mapa Urbanístic de Catalunya, qualification layer (Diputació de Barcelona ArcGIS service, updated Jan 2023); share of site area per MUC code (>= 1 %); municipal plan codes not included; before.zoning (plan in force at vacancy) stays manual; computed by auto_case.py (20261116_204608)",
+        "surroundings": "indicators from the municipal register (padró) 1 Jan 2025, same source both years; foreign-born = born in the rest of the EU or the rest of the world; higher education = tertiary (16+); 'not available' excluded from the denominators; elderly living alone = people 65+ living alone / people 65+; '..' (hidden small counts) counted as 0; income, unemployment, property value and safety not automated (no series for both years); computed by auto_case.py (20261116_204608)",
+        "enclosure": "rule: 55.2 % of the boundary closed (576 points every 2 m: height >= 1.5 m non-vegetation 2025 318, OSM walls 0, OSM fences 0; OSM today); fences are seldom visible in heights; computed by auto_case.py (20261116_204608)",
+        "site_layout": "rule: parcel_shape regular; public streets/paths in the area 139 (OSM today); after cutting them: 43 pieces, largest 56.7 % of the site (fragmented if < 75 %); buildings 48.2 %; computed by auto_case.py (20261116_204608)",
+        "surface_substrate": "rule: impervious 33.5 %, bare earth + grass 13.4 %; OSM surface asphalt_or_concrete 3.1 %; finer classes need the image step; computed by auto_case.py (20261116_204608)",
+        "infrastructure": "rule: urban_network embedded, nearest main road 14 m; computed by auto_case.py (20261116_204608)",
+        "reclaimed_area_m2": "rule: site 60466 m2 minus 3710 m2 still construction / brownfield / greenfield in OSM today (4 polygons); computed by auto_case.py (20261116_204608)",
+        "assessment": "manual value (Ece), kept during review 2026-11-16",
+        "completion_year": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S12: \"“Abierto el nuevo parque de Can Batlló”\" (section)",
+        "new_use": "manual value (Ece), kept during review 2026-11-16",
+        "end_use_sensitivity": "manual value (Ece), kept during review 2026-11-16",
+        "regeneration_cost": "value set by Ece 2026-11-16 during review (proposal was {\"amount\": 23862362, \"currency\": \"EUR\", \"per_ha\": null, \"source\": \"“El total de la actuación de esta primera fase del pa)",
+        "community_objections": "manual value (Ece), kept during review 2026-11-16",
+        "actors": "manual value (Ece), kept during review 2026-11-16",
+        "governance_type": "manual value (Ece), kept during review 2026-11-16",
+        "governance": "manual value (Ece), kept during review 2026-11-16",
+        "memory_protection.memory_intangible": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S19: \"preservar la seva identitat conservada\" (page 2)",
+        "public_access": "manual value (Ece), kept during review 2026-11-16",
+        "inclusion": "manual value (Ece), kept during review 2026-11-16",
+        "gentrification": "manual value (Ece), kept during review 2026-11-16",
+        "urban_role": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S16: \"«pot convertir-se en pedra angular per al procés de recuperació de tot el recinte de Can Batlló per al barri i la ciutat»\" (page 9)",
+        "economic_viability": "ai_drafted (openai/gpt-5.4-mini), checked by Ece 2026-11-16; source S12: \"“El total de la actuación de esta primera fase del parque ha tenido un coste de 23.862.362 euros”\" (section)"
+      }
+    },
+    "objects": {
+      "tag": "",
+      "evidence_status": "",
+      "field_notes": {}
+    }
+  }
+}
