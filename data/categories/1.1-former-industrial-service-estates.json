@@ -142,6 +142,8 @@
     },
     "before": {
       "years_vacant": null,
+      "vacancy_start_year": null,
+      "vacancy_end_year": null,
       "cause_of_vacancy": "",
       "secondary_causes": [],
       "status": "",
@@ -228,6 +230,7 @@
       "funding": "",
       "reversibility": "",
       "link_to_permanent_plan": "",
+      "relation_to_next_use": "",
       "outcome": "",
       "actors": [
         {
@@ -246,6 +249,7 @@
       },
       "completion_year": null,
       "new_use": [],
+      "new_use_detail": "",
       "end_use_sensitivity": "",
       "physical_end_state": "",
       "retained_fabric": {

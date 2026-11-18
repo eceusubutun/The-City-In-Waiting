@@ -1,5 +1,5 @@
 {
-  "_about": "Field guide for analysis/categories/1.1-former-industrial-service-estates.json: what each field of case_template means, its allowed options, unit, desk source and the paper it comes from. Not filled in.",
+  "_about": "Field guide for analysis/categories/1.1-former-industrial-service-estates.json: what each field of case_template means, its allowed options, unit, desk source and the paper it comes from. Not filled in. v5, 18 Nov 2026 (Can Batlló template findings + temporary relation_to_next_use); see analysis/categories/1.1-changelog.md.",
   "field_options": {
     "_format": "Every entry: type (one_of | list_of | number | year | text | date | object), definition, options (if any), unit, desk_source (if fillable at the desk), source (paper, page). Blocks follow the order of case_template.",
     "_source": "typology v5, section 2 (fields recorded for every site, never used to define a type)",
@@ -53,12 +53,14 @@
       },
       "form_tag": {
         "type": "one_of",
-        "definition": "see analysis/cases/codebook.json",
+        "definition": "Form of the vacant land in relation to the surrounding fabric. none = a whole estate or plot that is neither interstitial nor residual.",
         "options": [
           "interstitial",
           "residual",
+          "none",
           "unknown"
-        ]
+        ],
+        "note": "Definitions of interstitial and residual still to be written (not in codebook v2). 'none' added 18 Nov 2026 (Can Batlló finding 1)."
       },
       "sources": {
         "type": "list_of",
@@ -101,16 +103,17 @@
       }
     },
     "site": {
-      "_definition": "Fixed facts about the land that do not change with regeneration. Anything that can change is recorded in before and again in after.",
+      "_definition": "Fixed facts about the land that do not change with regeneration. Anything that can change is recorded in before and again in after. Site boundary = the estate as it was at the moment of vacancy (historic plot), not today's cadastral parcels.",
       "area_m2": {
         "type": "number",
         "definition": "Area of the site polygon.",
         "unit": "m²",
-        "desk_source": "QGIS polygon on cadastre / orthophoto"
+        "desk_source": "QGIS polygon on cadastre / orthophoto",
+        "note": "Area of the boundary at vacancy. If later subdivision changed the parcels, keep this area and list today's parcels in cadastral_ref (Can Batlló finding 2)."
       },
       "cadastral_ref": {
         "type": "text",
-        "definition": "Cadastral parcel reference(s) of the site. Site boundary follows parcel boundaries.",
+        "definition": "Cadastral parcel reference(s) covering the site boundary. Today's parcels may not match the estate at vacancy; write the date checked.",
         "desk_source": "Sede Electrónica del Catastro",
         "source": "Rebernik et al. 2023, p. 8; Okeyinka et al. 2023, p. 15"
       },
@@ -125,7 +128,7 @@
         ],
         "desk_source": "QGIS polygon",
         "source": "Kim et al. 2018, Table 2 (rectangular / irregular / linear)",
-        "note": "shape_index gives the same information as a number; parcel_shape is the quick visual class."
+        "note": "shape_index gives the same information as a number; parcel_shape is the quick visual class. No numeric threshold between regular and irregular; for borderline outlines write the shape_index and choose by eye (Can Batlló finding 3)."
       },
       "shape_index": {
         "type": "number",
@@ -199,12 +202,41 @@
         "definition": "Return period of the flood map used, e.g. T100."
       },
       "location": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "Position of the site within the city.",
+        "options": [
+          "centre",
+          "inner_city",
+          "periphery",
+          "peri_urban",
+          "unknown"
+        ],
+        "fields": {
+          "centre": "the main business or historic core",
+          "inner_city": "the dense ring around the core, often old industrial and working districts",
+          "periphery": "the outer districts of the city",
+          "peri_urban": "the edge where the city meets the countryside"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)",
+        "note": "No distance threshold; support the choice with connectivity.distance_to_centre_km (Can Batlló finding 5)."
       },
       "urban_network": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "How the site sits in the city around it.",
+        "options": [
+          "embedded",
+          "waterfront",
+          "transport_hub",
+          "isolated",
+          "unknown"
+        ],
+        "fields": {
+          "embedded": "surrounded by urban fabric on all sides",
+          "waterfront": "on a river, canal, harbour or lake edge",
+          "transport_hub": "next to a major station or rail yard",
+          "isolated": "cut off from the city by barriers or distance"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "connectivity": {
         "type": "object",
@@ -224,9 +256,20 @@
     "before": {
       "years_vacant": {
         "type": "number",
-        "definition": "How long the site has been vacant.",
+        "definition": "How long the site was vacant = vacancy_end_year − vacancy_start_year (or until the recording year if still vacant).",
         "unit": "years",
         "note": "building unoccupied 60 days (others 120 days or more) = abandoned (Németh & Langhorst 2014, p. 144); empty homes > 6 months = long-term (Madanipour 2017, p. 5)"
+      },
+      "vacancy_start_year": {
+        "type": "year",
+        "definition": "Year the site started to empty (end of the original use, or start of gradual emptying).",
+        "desk_source": "historical orthophotos, press, planning records",
+        "note": "Added 18 Nov 2026 for estates that empty gradually (Can Batlló finding 6)."
+      },
+      "vacancy_end_year": {
+        "type": "year",
+        "definition": "Year a new use (temporary or permanent) started on the site. null if still vacant.",
+        "desk_source": "press, project pages"
       },
       "cause_of_vacancy": {
         "type": "one_of",
@@ -308,9 +351,10 @@
       },
       "enclosure": {
         "type": "one_of",
-        "definition": "Whether the site is surrounded by walls or fences.",
+        "definition": "Whether the site is closed off from the street. building_facades = perimeter formed by the outer walls of the site's own buildings.",
         "options": [
           "walled",
+          "building_facades",
           "fenced",
           "partly_enclosed",
           "open",
@@ -321,21 +365,22 @@
       },
       "vegetation": {
         "type": "object",
-        "definition": "Vegetation on the site at the time of recording (before: while vacant; after: after regeneration).",
+        "definition": "Vegetation on the site at the time of recording (before: while vacant; after: after regeneration). Rules: tree_canopy_cover_pct = cells vegetated (NDVI > 0) AND nDSM > 2 m; vegetation_height_m = mean nDSM of those cells; same grid in both years (Can Batlló finding 20).",
         "fields": {
           "present": "true / false",
           "tree_canopy_cover_pct": "% of site under tree canopy",
           "ndvi_mean": "mean NDVI of the site (−1 to 1), from infrared / multispectral imagery (Bonthoux et al. 2014, p. 85; Cui et al. 2025, p. 14)",
           "vegetation_height_m": "mean vegetation height in m, from LiDAR / surface model or site (Bonthoux et al. 2014, p. 85)"
         },
-        "desk_source": "ICGC infrared orthophoto (NDVI) and ICGC LiDAR v1 2008–2011 (height); LiDAR vegetation classes must be masked with NDVI > 0 (roofs misclassified at Can Batlló)",
+        "desk_source": "ICGC infrared orthophoto (NDVI) and ICGC LiDAR v1 2008–2011 (height); LiDAR vegetation classes must be masked with NDVI > 0 (roofs misclassified at Can Batlló). For values compared across years or cities, NDVI must come from a reflectance product (Sentinel-2, Landsat); NDVI from WMS-rendered orthophotos is provisional (Can Batlló findings 14, 21).",
         "source": "Kim et al. 2018, §2.4, Table 2",
         "note": "Kim et al. 2018, Table 2: large canopy > 30 %. Removed 14 Nov 2026: tree count and species count (not automatable from remote data); plantable_space_pct (derived from land_cover_pct, see its note)."
       },
       "succession_stage": {
         "type": "one_of",
-        "definition": "Stage of spontaneous vegetation.",
+        "definition": "Stage of spontaneous vegetation. none = no spontaneous succession (site sealed or roofed; vegetation planted).",
         "options": [
+          "none",
           "grassland",
           "shrub",
           "young_woodland",
@@ -356,7 +401,7 @@
         "unit": "%",
         "desk_source": "orthophoto",
         "source": "Preston et al. 2023, §2.4 (shadow class excluded); Kim et al. 2018, Table 6 uses a finer list",
-        "note": "Plantable space = 100 − buildings − impervious_surface (Kim et al. 2018, Table 2: large plantable space > 50 %); not stored, derived."
+        "note": "Plantable space = 100 − buildings − impervious_surface (Kim et al. 2018, Table 2: large plantable space > 50 %); not stored, derived. Impervious vs bare earth cannot be separated with NDVI + LiDAR: the remainder goes to impervious_surface when no exposed soil is visible on the orthophoto; Copernicus HRL Imperviousness can be used in the automated workflow (Can Batlló finding 13)."
       },
       "surface_substrate": {
         "type": "list_of",
@@ -399,8 +444,14 @@
         "source": "Kim et al. 2018, Table 2"
       },
       "terrain_vague": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "Whether the site was a terrain vague in the sense of Solà-Morales (1995): empty and available, indeterminate, outside the productive circuits of the city, carrying memory.",
+        "options": [
+          "yes",
+          "no",
+          "unknown"
+        ],
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "human_traces": {
         "type": "list_of",
@@ -417,12 +468,37 @@
         "source": "Bonthoux et al. 2014, pp. 83, 85; Cui et al. 2025, pp. 12–13"
       },
       "heritage_value": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "Whether the site carried heritage value at the time of vacancy.",
+        "options": [
+          "yes",
+          "no",
+          "unknown"
+        ],
+        "fields": {
+          "yes": "the structure (or part of it) survives AND it carries historic meaning for the city or community",
+          "no": "otherwise"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)",
+        "note": "Legal listing is not required."
       },
       "access": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "Who could enter the site while vacant.",
+        "options": [
+          "open",
+          "restricted",
+          "closed_informal_use",
+          "closed",
+          "unknown"
+        ],
+        "fields": {
+          "open": "anyone could enter",
+          "restricted": "by permission, partial or seasonal",
+          "closed_informal_use": "officially closed, but people got in anyway",
+          "closed": "closed and not used"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "ownership": {
         "type": "object",
@@ -524,7 +600,8 @@
           "buffer_m"
         ],
         "desk_source": "OpenStreetMap, Open Data BCN parks, land-cover map",
-        "source": "Bonthoux et al. 2014, p. 85; Cui et al. 2025, pp. 13, 16"
+        "source": "Bonthoux et al. 2014, p. 85; Cui et al. 2025, pp. 13, 16",
+        "note": "green_share_pct from NDVI: only comparable between years if both come from a reflectance product (Can Batlló finding 21)."
       },
       "surrounding_built_up_pct": {
         "type": "number",
@@ -535,10 +612,11 @@
       },
       "nearest_other_vacant_site_m": {
         "type": "number",
-        "definition": "Distance in metres to the nearest other vacant site (ecological connectivity).",
+        "definition": "Distance in metres to the nearest open vacant land (Urban Atlas class 13400 'land without current use').",
         "unit": "m",
-        "desk_source": "Own mapping in QGIS",
-        "source": "Bonthoux et al. 2014, p. 85; Cui et al. 2025, p. 13"
+        "desk_source": "Copernicus Urban Atlas (class 13400); municipal vacant-site inventories (e.g. Pla BUITS) for underused buildings",
+        "source": "Bonthoux et al. 2014, p. 85; Cui et al. 2025, p. 13",
+        "note": "Urban Atlas 13400 misses underused estates (Can Batlló = 12100 in UA 2012); the value is distance to open vacant land, not to a comparable site (Can Batlló finding 24)."
       },
       "surroundings": {
         "type": "object",
@@ -565,12 +643,16 @@
             "low",
             "unknown"
           ],
-          "income_level": [
-            "low",
-            "middle",
-            "high",
-            "unknown"
-          ],
+          "income_level": {
+            "options": [
+              "low",
+              "middle",
+              "high",
+              "unknown"
+            ],
+            "definition": "Income relative to comparison_area. Write the index and its value in indicators (household_income) and state the band rule used.",
+            "note": "No fixed threshold yet (Can Batlló finding 15)."
+          },
           "safety": [
             "safe",
             "not_safe",
@@ -587,9 +669,10 @@
               "elderly_living_alone_pct",
               "foreign_born_pct",
               "property_sales_count",
+              "registered_unemployed_pct",
               "other"
             ],
-            "note": "unemployment_rate in %; population_density in inhabitants / km²."
+            "note": "unemployment_rate in %; population_density in inhabitants / km². registered_unemployed_pct = registered unemployed / total population, % (Barcelona district sheets give counts, not rates; Can Batlló finding 15)."
           }
         },
         "desk_source": "Open Data BCN (Departament d'Estadística), Catastro; units: district, neighbourhood, small research zone, census tract",
@@ -706,10 +789,52 @@
         "desk_source": "planning records, project websites, press",
         "source": "Bragaglia & Rossignolo 2021, p. 377 (Paris defined, Nantes not); Németh & Langhorst 2014, p. 147"
       },
+      "relation_to_next_use": {
+        "type": "one_of",
+        "definition": "How the temporary use relates to the use that follows it (Urban Catalyst typology).",
+        "options": [
+          "stand_in",
+          "impulse",
+          "consolidation",
+          "coexistence",
+          "parasite",
+          "subversion",
+          "pioneer",
+          "displacement",
+          "unknown"
+        ],
+        "fields": {
+          "stand_in": "fills the gap until the next use, without lasting effect on it",
+          "impulse": "gives an impulse to the future development of the site",
+          "consolidation": "the temporary use becomes established as a permanent use",
+          "coexistence": "continues, often smaller, alongside the new permanent use",
+          "parasite": "draws on existing infrastructure or flows next to it",
+          "subversion": "occupies the site to contest the official plan",
+          "pioneer": "first use of land never used before, opening it to the city",
+          "displacement": "a use displaced from elsewhere, moving from site to site"
+        },
+        "desk_source": "planning records, project websites, press",
+        "source": "Urban Catalyst 2003, cited in Dubeaux & Cunningham-Sabot 2015, p. 1119 (8 type names)",
+        "note": "Type names from Dubeaux p. 1119; definitions paraphrased from Oswalt, Overmeyer & Misselwitz (2013) Urban Catalyst: The Power of Temporary Use — not yet read, to verify. Added 18 Nov 2026 (decision Ece)."
+      },
       "outcome": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json",
-        "desk_source": "planning records, project websites, press"
+        "type": "one_of",
+        "definition": "What happened to the temporary use.",
+        "options": [
+          "ended",
+          "stayed",
+          "shaped_the_plan",
+          "moved",
+          "unknown"
+        ],
+        "fields": {
+          "ended": "it stopped",
+          "stayed": "it became permanent",
+          "shaped_the_plan": "it influenced the final project",
+          "moved": "it moved or was copied elsewhere"
+        },
+        "desk_source": "planning records, project websites, press",
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "actors": {
         "type": "list_of",
@@ -734,6 +859,7 @@
               "government",
               "developer",
               "consultant",
+              "designer",
               "environmental_group",
               "investor",
               "community",
@@ -747,7 +873,8 @@
               "site_owner",
               "other"
             ],
-            "source": "He, Zainol & Azali 2024, pp. 9, 11, Table 6 (14 stakeholder types)"
+            "source": "He, Zainol & Azali 2024, pp. 9, 11, Table 6 (14 stakeholder types)",
+            "note": "designer = architect, landscape or urban designer (added 18 Nov 2026; Can Batlló finding 16)."
           },
           "initiator": {
             "type": "one_of",
@@ -758,7 +885,8 @@
             ]
           }
         }
-      }
+      },
+      "_definition": "If a temporary use becomes permanent, keep it here with outcome = stayed and relation_to_next_use = consolidation, and describe its present state again in after (Can Batlló finding 16)."
     },
     "after": {
       "assessment": {
@@ -781,7 +909,7 @@
       },
       "completion_year": {
         "type": "year",
-        "definition": "Year the new use was completed / opened.",
+        "definition": "Year the main new use first opened. For phased projects, the first opening of the main use; write in assessment.phase whether works continue (Can Batlló finding 18).",
         "desk_source": "project pages, municipal records, press",
         "source": "Doick et al. 2009, p. 27, Table 2; Kurtoğlu 2026, p. 16; Anguelovski et al. 2018, p. 14"
       },
@@ -802,7 +930,13 @@
           "other",
           "unknown"
         ],
-        "source": "Rebernik et al. 2023, p. 5, Table 2; list form: Wedding & Crawford-Brown 2007, p. 487 (number of uses of the site); Kurtoğlu 2026, p. 16"
+        "source": "Rebernik et al. 2023, p. 5, Table 2; list form: Wedding & Crawford-Brown 2007, p. 487 (number of uses of the site); Kurtoğlu 2026, p. 16",
+        "note": "First item = dominant use."
+      },
+      "new_use_detail": {
+        "type": "text",
+        "definition": "Short description of the new uses, dominant one first (new_use gives every listed category equal weight).",
+        "note": "Added 18 Nov 2026 (Can Batlló finding 17)."
       },
       "end_use_sensitivity": {
         "type": "one_of",
@@ -817,8 +951,26 @@
         "source": "Okeyinka et al. 2023, pp. 6–7, 18; Mahammedi et al. 2021, p. 15"
       },
       "physical_end_state": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "What happened to the physical structure.",
+        "options": [
+          "retained",
+          "adapted",
+          "partly_retained",
+          "replaced",
+          "left_wild",
+          "cleared",
+          "unknown"
+        ],
+        "fields": {
+          "retained": "kept almost exactly as it was",
+          "adapted": "kept, but transformed for a new use",
+          "partly_retained": "some parts kept, the rest demolished and built new",
+          "replaced": "demolished, with something new built in its place",
+          "left_wild": "left alone and taken over by nature",
+          "cleared": "demolished, with nothing new built"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "retained_fabric": {
         "type": "object",
@@ -828,7 +980,8 @@
           "volume_conserved_m3": "pre-existing volume conserved, m³"
         },
         "desk_source": "before / after orthophotos (footprints), plans, project documents",
-        "source": "Wedding & Crawford-Brown 2007, p. 487; Nocca & Remøy 2026, p. 12 (6.9.d.1, 6.9.f.2); Kurtoğlu 2026, p. 13 (HCV)"
+        "source": "Wedding & Crawford-Brown 2007, p. 487; Nocca & Remøy 2026, p. 12 (6.9.d.1, 6.9.f.2); Kurtoğlu 2026, p. 13 (HCV)",
+        "note": "Method: building_shell_reused_pct = cells that are building in both years AND |nDSM after − nDSM before| < 2 m, ÷ building cells before; volume = sum of before nDSM over retained cells × cell area. Façade-only retention is not captured (Can Batlló finding 22)."
       },
       "site_layout": "same as before.site_layout, recorded after regeneration",
       "enclosure": "same as before.enclosure, recorded after regeneration",
@@ -848,38 +1001,121 @@
         "source": "Wedding & Crawford-Brown 2007, p. 487 (% of site as greenspace); Nocca & Remøy 2026, p. 7 (1.2.g.2)"
       },
       "vegetation": "same as before.vegetation, recorded after regeneration",
-      "surface_substrate": "same as before.surface_substrate, recorded after regeneration",
+      "surface_substrate": {
+        "type": "list_of",
+        "definition": "Same as before.surface_substrate, recorded after regeneration; park surfaces added.",
+        "options": [
+          "graded_rubble",
+          "compacted_rubble",
+          "ballast",
+          "brick",
+          "sand",
+          "soil_clay",
+          "cracked_concrete",
+          "asphalt_or_concrete",
+          "lawn",
+          "play_surface",
+          "compacted_sand_gravel",
+          "unknown"
+        ],
+        "note": "play_surface = rubber or synthetic; compacted_sand_gravel = sauló paths (Can Batlló finding 19)."
+      },
       "infrastructure": "same as before.infrastructure, recorded after regeneration",
       "reclaimed_area_m2": {
         "type": "number",
-        "definition": "Area of the site brought back into use, m².",
+        "definition": "Area of the site in use at assessment.date. Not in use = construction plots, derelict buildings, fenced unused land (Can Batlló finding 23).",
         "unit": "m²",
         "desk_source": "QGIS polygon",
         "source": "Nocca & Remøy 2026, p. 8 (2.4.g.8)"
       },
       "biodiversity": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "How the nature on the site changed compared with before.",
+        "options": [
+          "increased",
+          "unchanged",
+          "decreased",
+          "replaced",
+          "unknown"
+        ],
+        "fields": {
+          "increased": "more green or habitat",
+          "unchanged": "about the same, same type",
+          "decreased": "less green or habitat",
+          "replaced": "one type of nature removed and another put in its place (e.g. spontaneous to designed)"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "memory_protection": {
         "type": "object",
-        "definition": "see analysis/cases/codebook.json",
-        "fields": [
-          "memory_tangible",
-          "memory_intangible"
-        ]
+        "definition": "Whether the site's memory was carried into the new project.",
+        "fields": {
+          "memory_tangible": {
+            "options": [
+              "yes",
+              "no",
+              "unknown"
+            ],
+            "definition": "Physical memory: the structure survives and its history can be read."
+          },
+          "memory_intangible": {
+            "options": [
+              "yes",
+              "no",
+              "unknown"
+            ],
+            "definition": "Social memory: the site's stories, uses and meaning to people are carried into the project."
+          }
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "public_access": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "Whether the public is allowed in today (rules, fees, opening hours).",
+        "options": [
+          "yes",
+          "partly",
+          "no",
+          "unknown"
+        ],
+        "fields": {
+          "yes": "open to anyone, free",
+          "partly": "only some parts open, or paid, or seasonal",
+          "no": "closed"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "inclusion": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "Whether a wide range of people, especially local and low-income residents, actually use the space and feel it is for them.",
+        "options": [
+          "inclusive",
+          "limited",
+          "exclusionary",
+          "unknown"
+        ],
+        "fields": {
+          "inclusive": "evidence that local or low-income people use it or help run it",
+          "limited": "open in principle, but evidence that some groups (often locals) use it much less",
+          "exclusionary": "exclusion or displacement of users is documented"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "gentrification": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json Numbers go in surroundings."
+        "type": "one_of",
+        "definition": "Whether the project led to rising property values and displacement around the site. Numbers go in surroundings.",
+        "options": [
+          "yes",
+          "partial",
+          "no",
+          "unknown"
+        ],
+        "fields": {
+          "yes": "documented",
+          "partial": "some evidence, or evidence is disputed",
+          "no": "evidence that it did not happen"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "governance_type": {
         "type": "list_of",
@@ -897,16 +1133,56 @@
         "source": "Nocca & Remøy 2026, pp. 3, 10; Wedding & Crawford-Brown 2007, p. 493; Anguelovski et al. 2018, pp. 9–10; He et al. 2024, p. 12; Doick et al. 2009, p. 5"
       },
       "governance": {
-        "type": "text",
-        "definition": "Description of how the regeneration was led; people and organisations go in actors. see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "Who owns and runs the site today; how the regeneration was led goes in governance_type, people in actors.",
+        "options": [
+          "public",
+          "private",
+          "partnership",
+          "bottom_up",
+          "unknown"
+        ],
+        "fields": {
+          "public": "owned and run by the city or state",
+          "private": "owned and run privately",
+          "partnership": "public owner, run by a non-profit or private partner",
+          "bottom_up": "run by citizens or grassroots groups"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "urban_role": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "What the project does to the city beyond its own boundary.",
+        "options": [
+          "interim",
+          "contained",
+          "connector",
+          "catalyst",
+          "unknown"
+        ],
+        "fields": {
+          "interim": "a temporary role until something else happens",
+          "contained": "the effect stays mainly inside the site",
+          "connector": "it mainly links places, as a route or green corridor",
+          "catalyst": "it triggers the transformation of the area around it"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "economic_viability": {
-        "type": "text",
-        "definition": "see analysis/cases/codebook.json"
+        "type": "one_of",
+        "definition": "How the site is funded today.",
+        "options": [
+          "self_funded",
+          "subsidised",
+          "failing",
+          "unknown"
+        ],
+        "fields": {
+          "self_funded": "covered mainly by its own income or private fundraising",
+          "subsidised": "stable, but needs regular public money",
+          "failing": "closed, failing or rescued"
+        },
+        "source": "analysis/cases/codebook.json v2 (options copied into the template 18 Nov 2026)"
       },
       "regeneration_cost": {
         "type": "object",
@@ -961,6 +1237,7 @@
               "government",
               "developer",
               "consultant",
+              "designer",
               "environmental_group",
               "investor",
               "community",
@@ -974,7 +1251,8 @@
               "site_owner",
               "other"
             ],
-            "source": "He, Zainol & Azali 2024, pp. 9, 11, Table 6 (14 stakeholder types)"
+            "source": "He, Zainol & Azali 2024, pp. 9, 11, Table 6 (14 stakeholder types)",
+            "note": "designer = architect, landscape or urban designer (added 18 Nov 2026; Can Batlló finding 16)."
           },
           "initiator": {
             "type": "one_of",
